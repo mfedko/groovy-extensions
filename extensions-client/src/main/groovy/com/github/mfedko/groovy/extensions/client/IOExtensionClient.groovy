@@ -8,9 +8,6 @@ class IOExtensionClient {
     public static void main(String[] args) {
 
         def url = IOExtensionClient.class.getResource("/extensions_client.txt")
-        InputStream stream = url.openStream()
-        stream.withCloseable {
-            println stream.text
-        }
+        url.withGzipReader { Reader r -> }
     }
 }
