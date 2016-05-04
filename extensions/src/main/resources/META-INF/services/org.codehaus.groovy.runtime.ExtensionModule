@@ -1,0 +1,3 @@
+moduleName = mfedko-groovy-extensions-module
+moduleVersion = 1.0
+extensionClasses = com.github.mfedko.groovy.extensions.IOExtension

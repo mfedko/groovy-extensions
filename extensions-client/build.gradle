@@ -1,0 +1,8 @@
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+dependencies {
+    compile project(':extensions')
+}
+
+mainClassName = 'com.github.mfedko.groovy.extensions.client.IOExtensionClient'
